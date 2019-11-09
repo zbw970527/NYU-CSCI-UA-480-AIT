@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+		<body>
+			<label><b>Filter by tag</b></label>
+			<form method="POST" action = "">
+			  <input type = "text" placeholder="add your filter" name = "tag" >
+			  <input type = "submit" value = "filter">
+			</form>
+      <h3><b>artworks</b></h3>
+			<div>
+				{{#each paintings}}
+      	<h4><b>{{date}} {{title}}</b></h4>
+				<pre>{{image}}</pre>
+				<p>tags : {{#each tags}}<a href="/?filter={{.}}" target="_self">{{.}}</a> {{/each}}</p>
+				{{/each}}
+			</div>
+
+		</body>
+</html>

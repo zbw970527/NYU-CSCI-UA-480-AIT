@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<link rel="stylesheet" href="/css/base.css">
+      <div>
+        <title>ascii sketchbook</title>
+        <h1><img src='/img/logo.png' alt = "logo" width=80px height="27px">ascii sketchbook</h1>
+      </div>
+      <div>
+        <h2>Add your own painting!!</h2>
+      </div>
+      <!--
+      this part of css is borrowed from
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form
+      --->
+      <style>
+      form {
+        margin: 0;
+        width: 400px;
+        padding: 1em;
+      }
+
+      form div + div {
+        margin-top: 1em;
+      }
+
+      label {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
+
+      input, textarea {
+        font: 1em sans-serif;
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+      }
+
+      textarea {
+        vertical-align: top;
+        height: 350px;
+      }
+
+      </style>
+		</head>
+		<body>
+      <form method="POST" action = "">
+        <div>
+          <label><b>Title</b></label>
+          <input type = "text" placeholder="add your title" name = "title" >
+        </div>
+        <div>
+          <label><b>date</b></label>
+          <input type = "text" placeholder="date (YYYY-MM-DD)" name = "date" >
+        </div>
+        <div>
+          <label><b>Painting</b></label>
+          <textarea type = "text" cols="40" rows="5"placeholder="draw your artwork here!" name = "image"></textarea>
+        </div>
+        <div>
+          <label><b>Tags</b></label>
+          <input type = "text" placeholder="add tags (separate by single space)" name = "tags" >
+        </div>
+        <div>
+          <input type = "submit">
+        </div>
+      </form>
+      <a href="/" target="_self">home</a>
+      <a href="/add" target="_self">add</a>
+
+		</body>
+</html>
