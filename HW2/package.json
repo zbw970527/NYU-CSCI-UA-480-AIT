@@ -1,0 +1,35 @@
+{
+  "name": "zbw970527-homework02",
+  "version": "1.0.0",
+  "description": "Homework 2 Bowen Zhang bz896  git hub: zbw970527",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-001-003-fall-2018/zbw970527-homework02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-001-003-fall-2018/zbw970527-homework02/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-001-003-fall-2018/zbw970527-homework02#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "csv": "^3.1.0",
+    "csv-parse": "^3.0.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-mocha": "^5.2.0",
+    "mocha-sinon": "^2.1.0",
+    "sinon": "^6.3.4"
+  },
+  "dependencies": {
+    "npm": "^6.4.1",
+    "request": "^2.88.0"
+  }
+}
