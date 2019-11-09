@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+		<body>
+			<h3><b>Filter:</b></h3>
+			<form method="GET" action = "/">
+      <div>
+        <label>what:</label>
+        <input type = "text" name = "what" >
+      </div>
+      </div>
+      <label>where:</label>
+      <input type = "text" name = "where" >
+      </div>
+      <div>
+        <label>date:</label>
+        <input type = "text" name = "date" >
+      </div>
+      <div>
+        <label>hour:</label>
+        <input type = "text" name = "hour" >
+      </div>
+      <div>
+			  <input type = "submit" value = "filter">
+      </div>
+			</form>
+      <h3><b>SOUNDS:</b></h3>
+			<table>
+        <tr>
+          <th>What</th>
+          <th>Where</th>
+          <th>Date</th>
+          <th>Hour</th>
+          <th>Description</th>
+        </tr>
+				{{#each sounds}}
+        <tr>
+          <td>{{what}}</td>
+          <td>{{where}}</td>
+          <td>{{date}}</td>
+          <td>{{hour}}</td>
+          <td>{{desc}}</td>
+        </tr>
+				{{/each}}
+			</table>
+      Your session's total page visits: {{count}}
+		</body>
+</html>
