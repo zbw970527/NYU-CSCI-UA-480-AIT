@@ -1,0 +1,30 @@
+{
+  "name": "zbw970527-homework01",
+  "version": "1.0.0",
+  "description": "Bowen Zhang github user name: zbw970527 bz896 Homework #01 - Tic Tac Toe",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-001-003-fall-2018/zbw970527-homework01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-001-003-fall-2018/zbw970527-homework01/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-001-003-fall-2018/zbw970527-homework01#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.6.0",
+    "eslint-plugin-mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}
