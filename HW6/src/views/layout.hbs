@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+	</title>
+	<link rel="stylesheet" href="/css/site.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<div class = "basic">
+	<a href='/' target = '_self'>Home</a> |
+	{{#if user}}
+	<a href='/article/add' target = '_self'>Add</a>
+	 <h4>Logged in as: {{user.username}}</h4>
+	{{else}}
+	<a href = '/register' target = '_self'>Register</a> or
+	<a href = '/login' target="_self">Login</a>
+	{{/if}}
+</div>
+<h1>Read it!</h1>
+	{{{body}}}
+</body>
+</html>

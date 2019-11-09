@@ -1,0 +1,10 @@
+{{#if loggedin}}
+<h3> Your Articles: </h3>
+<ol>
+  {{#each article}}
+    <li><a href={{url}}>{{title}}</a> - [<a href='/article/{{slug}}'>Details</a>]</li>
+  {{/each}}
+</ol>
+{{else}}
+<p>Welcome to Read it! Here you can read posts from other users and post your own stuff!</p>
+{{/if}}

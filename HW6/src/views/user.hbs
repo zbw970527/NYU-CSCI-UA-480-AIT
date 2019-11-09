@@ -1,0 +1,10 @@
+{{#if found}}
+<h3>Articles posted by <b>{{un}}</b>:</h3>
+<ol>
+  {{#each article}}
+    <li><a href={{url}}>{{title}}</a> - [<a href='/article/{{slug}}'>Details</a>]</li>
+  {{/each}}
+</ol>
+{{else}}
+  <h2>Oops!! We don't find the user <b>{{un}}</b> in our database.</h2>
+{{/if}}

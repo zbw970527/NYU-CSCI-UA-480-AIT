@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+  color: grey;
+}
+
+body {
+  text-align: center;
+  background-color: lightblue;
+}
+
+.error {
+    background-color: lightcoral;
+    border-spacing: 10px;
+}
