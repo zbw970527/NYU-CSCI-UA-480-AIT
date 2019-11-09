@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Anime Site!</title>
+	<link rel="stylesheet" href="/css/site.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<div class = "basic">
+	<a href='/' target = '_self'>Home</a> |
+	{{#if user}}
+	<a href='/myhomepage/addForum' target = '_self'>Create a new Anime Forum!</a> |
+  <a href = '/myhomepage/addAnime' target="_self">Add Anime to Your List!</a>
+	<a href='/myhomepage'>{{user.username}}</a>
+	{{else}}
+	<a href = '/register' target = '_self'>Register</a> or
+	<a href = '/login' target="_self">Login</a>
+	{{/if}}
+</div>
+{{#if user}}
+<br>
+<div class="title_block">
+<h1>Welcome back {{user.username}}!<h1>
+	<p> <p>
+<p class="welcome">How is it going? <br>Do you have anything new to share? </p>
+</div>
+<img class = "title_block" 	src="/img/title.jpg" alt="title img">
+{{else}}
+<br>
+<div class="title_block">
+<h1>Welcome to the Animation Forum!!<h1>
+<br>
+<p class="welcome">Register as a member and leave comment for the anime you like!</p>
+</div>
+<img class = "title_block" 	src="/img/title.jpg" alt="title img">
+{{/if}}
+
+	{{{body}}}
+</body>
+</html>

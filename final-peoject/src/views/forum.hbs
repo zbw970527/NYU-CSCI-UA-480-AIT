@@ -1,0 +1,23 @@
+<body>
+  <form class="addReview" action="/forum/{{slug}}/addReview">
+      <input type="submit" value="Post your review!" />
+  </form>
+
+<h1>{{animeName}}</h1>
+<h3>Overall Score: {{rating}}</h3>
+  <h3><b>Reviews:</b></h3>
+  <table class="review">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Post Date</th>
+    </tr>
+    {{#each list}}
+    <tr>
+      <td><a href='/article/{{slug}}'>{{title}}</a></td>
+      <td>{{reviewer}}</td>
+      <td>{{date}}</td>
+    </tr>
+    {{/each}}
+  </table>
+</body>

@@ -1,0 +1,14 @@
+<h2>Add a new Anime to your list!</h2>
+{{#if addmessage}}
+<div class="error">{{ addmessage }}</div>
+<br>
+{{/if}}
+<form method="POST" action="">
+	<div>
+		<label for="animeName">Anime's English Name:</label>
+	</div>
+	<div>
+		<input type="text" id="animeName" name="animeName">
+	</div>
+	<input type="submit" value="Add to My List!">
+</form>

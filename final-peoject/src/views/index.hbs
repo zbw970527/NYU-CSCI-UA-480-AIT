@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+		<body>
+      <h3><b>Anime Froums:</b></h3>
+			<table>
+        <tr>
+          <th>English Name</th>
+          <th>Japanese Name</th>
+          <th>Release Year</th>
+        </tr>
+				{{#each animeList}}
+        <tr>
+          <td><a href='/forum/{{slug}}'>{{animeName}}</a></td>
+          <td>{{animeNameJp}}</td>
+          <td>{{releaseYear}}</td>
+        </tr>
+				{{/each}}
+			</table>
+		</body>
+</html>

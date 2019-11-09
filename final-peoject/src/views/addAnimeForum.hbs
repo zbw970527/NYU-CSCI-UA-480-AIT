@@ -1,0 +1,32 @@
+<h2>Add a new Anime Forum!</h2>
+{{#if addmessage}}
+<div class="error">{{ addmessage }}</div>
+{{/if}}
+<br>
+<form method="POST" action="">
+	<div>
+		<label for="animeName">Anime's English Name:</label>
+	</div>
+	<div>
+		<input type="text" id="animeName" name="animeName">
+	</div>
+	<div>
+		<label for="animeNameJp">Anime's Japanese Name</label>
+	</div>
+	<div>
+		<input type="text" id="animeNameJp" name="animeNameJp">
+	</div>
+	<div>
+		<label for="description">Description:</label>
+	</div>
+	<div>
+		<textarea name="description" id="description"></textarea>
+	</div>
+	<div>
+		<label for="releaseYear">Release Year:</label>
+	</div>
+	<div>
+		<input type="text" name="releaseYear" id="releaseYear"></input>
+	</div>
+	<input type="submit" value="Create Forum">
+</form>
