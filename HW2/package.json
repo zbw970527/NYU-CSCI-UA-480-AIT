@@ -22,7 +22,7 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "csv": "^3.1.0",
-    "csv-parse": "^3.0.0",
+    "csv-parse": "^4.4.6",
     "eslint": "^5.6.0",
     "eslint-plugin-mocha": "^5.2.0",
     "mocha-sinon": "^2.1.0",
